@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
 
+import { useSelector } from 'react-redux';
+
+
+import Dashboard from './components/ui/Dashboard';
+import FormContainer from './components/ui/FormContainer';
+
+
 function App() {
+
+  const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      {!isAuthenticated ? <FormContainer /> : <Dashboard />}
     </div>
   );
 }

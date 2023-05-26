@@ -1,0 +1,18 @@
+.form-header{
+    display: flex;
+    justify-content: center;
+}
+
+.form-header .cta_btn{
+    margin: 5px;
+    background-color: transparent;
+    border: none;
+    opacity: .5;
+}
+
+.cta_btn.active{
+    color: #5957BA;
+    opacity: 1;
+    font-weight: 700;
+    text-decoration: underline;
+}
