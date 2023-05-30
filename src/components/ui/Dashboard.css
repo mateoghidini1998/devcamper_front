@@ -1,0 +1,107 @@
+/* LandingPage.css */
+.landing-page {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    flex-basis: 10%;
+    background-color: #f2f2f2;
+    padding: 2rem;
+  }
+  
+  .sidebar-header {
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar-header h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .menu-item i {
+    margin-right: 1rem;
+  }
+  
+  .menu-item span {
+    font-size: 1.2rem;
+  }
+  
+  .active {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .logout-button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #5957BA;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 2rem;
+  }
+
+  .cards-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .bootcamp-card {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    text-align: center;
+    width: 40%;
+    border-radius: 8px;
+    margin: 10px;
+    height: auto;
+  }
+  
+  .bootcamp-card img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .bootcamp-card h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .bootcamp-card p {
+    font-size: .8rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .bootcamp-card a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 4px;
+  }  
